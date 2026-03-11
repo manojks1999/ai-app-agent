@@ -1,0 +1,10 @@
+openai>=1.0.0
+google-generativeai>=0.3.0
+dashscope>=1.10.0
+opencv-python>=4.8.0
+SpeechRecognition>=3.10.0
+PyAudio>=0.2.13
+pyyaml>=6.0
+colorama>=0.4.6
+numpy>=1.24.0
+Pillow>=10.0.0

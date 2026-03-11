@@ -1,0 +1,45 @@
+# ================================================================
+# VoiceAppAgent Configuration
+# ================================================================
+
+# --- LLM Model Settings ---
+MODEL: "OpenAI"  # Options: OpenAI, Gemini, Qwen
+
+# OpenAI Configuration
+OPENAI_API_KEY: ""
+OPENAI_API_MODEL: "gpt-5.1"
+OPENAI_API_BASE: "https://api.openai.com/v1"
+MAX_TOKENS: 1024
+TEMPERATURE: 0.0
+
+# Google Gemini Configuration
+GEMINI_API_KEY: ""
+GEMINI_MODEL: "gemini-2.5-pro"
+
+# Alibaba Qwen Configuration
+DASHSCOPE_API_KEY: "sk-"
+QWEN_MODEL: "qwen-vl-max"
+
+# --- Voice Input Settings ---
+VOICE_ENABLED: false
+VOICE_ENGINE: "whisper"  # Options: whisper, local
+VOICE_LANGUAGE: "en"
+VOICE_TIMEOUT: 10  # Max seconds to wait for speech
+VOICE_ENERGY_THRESHOLD: 300  # Mic sensitivity (lower = more sensitive)
+WAKE_WORD: "hey agent"
+
+# --- Android Device Settings ---
+ANDROID_SCREENSHOT_DIR: "/sdcard"
+ANDROID_XML_DIR: "/sdcard"
+ADB_TIMEOUT: 10  # Timeout in seconds for ADB commands
+
+# --- Agent Behavior Settings ---
+MAX_ROUNDS: 20
+REQUEST_INTERVAL: 3  # Seconds between consecutive LLM requests
+DOC_REFINE: false
+DARK_MODE: false
+MIN_DIST: 30  # Min pixel distance between elements to prevent overlap
+
+# --- Retry Settings ---
+MAX_RETRIES: 3
+RETRY_BACKOFF_FACTOR: 2.0
